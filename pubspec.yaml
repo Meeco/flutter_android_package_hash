@@ -1,8 +1,7 @@
 name: android_hash_log
-description: A new flutter plugin project.
-version: 0.0.1
-author:
-homepage:
+description: A package to log hash on android
+version: 0.0.2
+homepage: http://www.meeco.me
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
@@ -11,7 +10,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  icapps_license: ^2.0.0
 
 dev_dependencies:
   flutter_test:

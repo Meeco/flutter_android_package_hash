@@ -9,6 +9,16 @@ public class SwiftAndroidHashLogPlugin: NSObject, FlutterPlugin {
   }
 
   public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
-    result("iOS " + UIDevice.current.systemVersion)
+    switch (call.method) {
+    case "getPlatformVersion":
+        result("iOS " + UIDevice.current.systemVersion)
+        break;
+    case "getHash":
+        result("-")
+        break;
+    default:
+        result("Not Implemented!")
+        break;
+    }
   }
 }
